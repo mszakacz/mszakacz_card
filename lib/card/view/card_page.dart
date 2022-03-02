@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-
 import 'package:mszakacz_card/card/bloc/card_bloc.dart';
-import 'package:mszakacz_card/card/widgets/window_widget.dart';
+import 'package:mszakacz_card/card/widgets/widgets.dart';
 
 class CardPage extends StatelessWidget {
   const CardPage({Key? key}) : super(key: key);
@@ -53,7 +52,7 @@ class CardView extends StatelessWidget {
               child: Container(
                 color: Colors.green,
                 child: const Center(
-                  child: Text('3'),
+                  child: PictureWidget(),
                 ),
               ),
             ),
