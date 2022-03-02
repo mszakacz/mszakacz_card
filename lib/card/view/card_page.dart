@@ -1,12 +1,18 @@
 import 'package:flutter/material.dart';
-import '../../consts/dimensions.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+
+import 'package:mszakacz_card/card/bloc/card_bloc.dart';
+import 'package:mszakacz_card/card/widgets/window_widget.dart';
 
 class CardPage extends StatelessWidget {
   const CardPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return const CardView();
+    return BlocProvider(
+      create: (context) => CardBloc(),
+      child: const CardView(),
+    );
   }
 }
 
@@ -15,59 +21,12 @@ class CardView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MyStatefulWidget();
-  }
-}
-
-class MyStatefulWidget extends StatefulWidget {
-  const MyStatefulWidget({Key? key}) : super(key: key);
-
-  @override
-  State<MyStatefulWidget> createState() => _MyStatefulWidgetState();
-}
-
-class _MyStatefulWidgetState extends State<MyStatefulWidget> {
-  bool selected = false;
-
-  @override
-  Widget build(BuildContext context) {
-    return SizedBox(
-      width: 200,
-      height: 50,
-      child: Stack(
-        children: <Widget>[
-          Center(
-            child: Container(
-              height: containerSize,
-              width: containerSize,
-              color: Colors.yellow,
-            ),
-          ),
-          AnimatedPositioned(
-            duration: const Duration(seconds: 1),
-            top: botRowPositionTop,
-            left: leftColumnPositionLeft,
-            child: Container(
-              height: smallWindowSize,
-              width: smallWindowSize,
-              color: Colors.blue,
-              child: Center(
-                child: Text('1'),
-              ),
-            ),
-          ),
-          AnimatedPositioned(
-            width: selected ? 200.0 : 50.0,
-            height: selected ? 50.0 : 200.0,
-            top: selected ? 50.0 : 150.0,
-            left: selected ? 50.0 : 100.0,
-            duration: const Duration(seconds: 2),
-            child: GestureDetector(
-              onTap: () {
-                setState(() {
-                  selected = !selected;
-                });
-              },
+    return BlocBuilder<CardBloc, CardState>(
+      builder: (context, state) {
+        return Stack(
+          children: [
+            WindowWidget(
+              window: state.windows[0],
               child: Container(
                 color: Colors.blue,
                 child: const Center(
@@ -75,9 +34,54 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
                 ),
               ),
             ),
-          ),
-        ],
-      ),
+            WindowWidget(
+              window: state.windows[1],
+              child: Container(
+                color: Colors.yellow,
+                child: const Center(
+                  child: Text('2'),
+                ),
+              ),
+            ),
+            WindowWidget(
+              window: state.windows[2],
+              child: Container(
+                color: Colors.green,
+                child: const Center(
+                  child: Text('3'),
+                ),
+              ),
+            ),
+            WindowWidget(
+              window: state.windows[3],
+              child: Container(
+                color: Colors.indigo,
+                child: const Center(
+                  child: Text('4'),
+                ),
+              ),
+            ),
+            WindowWidget(
+              window: state.windows[4],
+              child: Container(
+                color: Colors.grey,
+                child: const Center(
+                  child: Text('5'),
+                ),
+              ),
+            ),
+            WindowWidget(
+              window: state.windows[5],
+              child: Container(
+                color: Colors.pink,
+                child: const Center(
+                  child: Text('6'),
+                ),
+              ),
+            ),
+          ],
+        );
+      },
     );
   }
 }
