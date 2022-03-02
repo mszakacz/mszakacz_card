@@ -11,7 +11,9 @@ class CardPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return BlocProvider(
       create: (context) => CardBloc(),
-      child: const CardView(),
+      child: const Scaffold(
+        body: CardView(),
+      ),
     );
   }
 }
@@ -27,6 +29,7 @@ class CardView extends StatelessWidget {
           children: [
             WindowWidget(
               window: state.windows[0],
+              windowIndex: 0,
               child: Container(
                 color: Colors.blue,
                 child: const Center(
@@ -36,6 +39,7 @@ class CardView extends StatelessWidget {
             ),
             WindowWidget(
               window: state.windows[1],
+              windowIndex: 1,
               child: Container(
                 color: Colors.yellow,
                 child: const Center(
@@ -45,6 +49,7 @@ class CardView extends StatelessWidget {
             ),
             WindowWidget(
               window: state.windows[2],
+              windowIndex: 2,
               child: Container(
                 color: Colors.green,
                 child: const Center(
@@ -54,6 +59,7 @@ class CardView extends StatelessWidget {
             ),
             WindowWidget(
               window: state.windows[3],
+              windowIndex: 3,
               child: Container(
                 color: Colors.indigo,
                 child: const Center(
@@ -63,6 +69,7 @@ class CardView extends StatelessWidget {
             ),
             WindowWidget(
               window: state.windows[4],
+              windowIndex: 4,
               child: Container(
                 color: Colors.grey,
                 child: const Center(
@@ -72,6 +79,7 @@ class CardView extends StatelessWidget {
             ),
             WindowWidget(
               window: state.windows[5],
+              windowIndex: 5,
               child: Container(
                 color: Colors.pink,
                 child: const Center(
