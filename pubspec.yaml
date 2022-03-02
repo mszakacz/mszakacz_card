@@ -1,5 +1,5 @@
 name: mszakacz_card
-description: Bussiness card. Contains such a informations like
+description: Business card. Contains such a informations like
   - Designer name,
   - His picture,
   - His short description,
@@ -13,8 +13,8 @@ environment:
   sdk: ">=2.16.0 <3.0.0"
 
 dependencies:
-  equatable: ^2.0.3
   bloc: ^8.0.2
+  equatable: ^2.0.3
   flutter:
     sdk: flutter
   flutter_bloc: ^8.0.1
