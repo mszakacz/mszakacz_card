@@ -1,8 +1,8 @@
 import 'package:bloc/bloc.dart';
 import 'package:equatable/equatable.dart';
-import 'package:mszakacz_card/consts/dimensions.dart';
-import '../../models/window.dart';
-import 'package:mszakacz_card/consts/position.dart';
+import 'package:mszakacz_card/card/logic/dimensions.dart';
+import 'package:mszakacz_card/constant/position.dart';
+import 'package:mszakacz_card/models/window.dart';
 
 part 'card_event.dart';
 part 'card_state.dart';
