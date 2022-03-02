@@ -8,9 +8,9 @@ abstract class CardEvent extends Equatable {
 }
 
 class TapWindow extends CardEvent {
-  const TapWindow({required this.clickedWindow});
-  final Window clickedWindow;
+  const TapWindow({required this.clickedWindowIndex});
+  final int clickedWindowIndex;
 
   @override
-  List<Object> get props => [clickedWindow];
+  List<Object> get props => [clickedWindowIndex];
 }

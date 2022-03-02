@@ -9,4 +9,12 @@ class CardState extends Equatable {
 
   @override
   List<Object> get props => [windows];
+
+  CardState copyWith({
+    List<Window>? windows,
+  }) {
+    return CardState(
+      windows: windows ?? this.windows,
+    );
+  }
 }
