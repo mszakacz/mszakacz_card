@@ -8,10 +8,12 @@ class WindowWidget extends StatefulWidget {
     Key? key,
     required this.window,
     required this.child,
+    required this.windowIndex,
   }) : super(key: key);
 
   final Window window;
   final Widget child;
+  final int windowIndex;
 
   @override
   _WindowWidgetState createState() => _WindowWidgetState();
@@ -25,10 +27,12 @@ class _WindowWidgetState extends State<WindowWidget> {
       height: widget.window.size,
       top: widget.window.top,
       left: widget.window.left,
-      duration: const Duration(seconds: 1),
+      duration: const Duration(milliseconds: 500),
       child: GestureDetector(
         onTap: () => BlocProvider.of<CardBloc>(context).add(
-          TapWindow(clickedWindow: widget.window),
+          TapWindow(
+            clickedWindowIndex: widget.windowIndex,
+          ),
         ),
         child: widget.child,
       ),
