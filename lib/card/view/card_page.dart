@@ -29,62 +29,38 @@ class CardView extends StatelessWidget {
             WindowWidget(
               window: state.windows[0],
               windowIndex: 0,
-              child: Container(
-                color: Colors.blue,
-                child: const Center(
-                  child: Text('1'),
-                ),
-              ),
+              child: const PictureWidget(),
             ),
             WindowWidget(
               window: state.windows[1],
               windowIndex: 1,
-              child: Container(
-                color: Colors.yellow,
-                child: const Center(
-                  child: Text('2'),
-                ),
-              ),
+              child: state.windows[1].selected
+                  ? const AnimatedNameWidget()
+                  : const NameWidget(),
             ),
             WindowWidget(
               window: state.windows[2],
               windowIndex: 2,
-              child: Container(
-                color: Colors.green,
-                child: const Center(
-                  child: PictureWidget(),
-                ),
-              ),
+              child: AnimatedGoalsWidget(selected: !state.windows[2].selected),
             ),
             WindowWidget(
               window: state.windows[3],
               windowIndex: 3,
-              child: Container(
-                color: Colors.indigo,
-                child: const Center(
-                  child: Text('4'),
-                ),
-              ),
+              child:
+                  AnimatedProjectsWidget(selected: !state.windows[3].selected),
             ),
             WindowWidget(
               window: state.windows[4],
               windowIndex: 4,
-              child: Container(
-                color: Colors.grey,
-                child: const Center(
-                  child: Text('5'),
-                ),
+              child: AnimatedSwitcher(
+                duration: const Duration(milliseconds: 500),
+                child: AnimatedLinksWidget(selected: state.windows[4].selected),
               ),
             ),
             WindowWidget(
               window: state.windows[5],
               windowIndex: 5,
-              child: Container(
-                color: Colors.pink,
-                child: const Center(
-                  child: Text('6'),
-                ),
-              ),
+              child: AnimatedHobbiesWidget(selected: state.windows[5].selected),
             ),
           ],
         );
