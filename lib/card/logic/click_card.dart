@@ -4,57 +4,57 @@ import 'package:mszakacz_card/models/window.dart';
 List<Window> clickCard(int clickedItem) {
   if (clickedItem == 0) {
     return [
-      largeBotRight,
+      largeTopLeft,
       botLeft,
-      midLeft,
-      topLeft,
-      topCenter,
+      botCenter,
+      botRight,
+      midRight,
       topRight,
     ];
   } else if (clickedItem == 1) {
     return [
-      botRight,
-      largeBotLeft,
       topLeft,
-      topCenter,
-      topRight,
+      largeBotLeft,
+      botRight,
       midRight,
+      topRight,
+      topCenter,
     ];
   } else if (clickedItem == 2) {
     return [
-      midRight,
-      botRight,
-      largeBotLeft,
-      topLeft,
       topCenter,
+      topLeft,
+      largeBotLeft,
+      botRight,
+      midRight,
       topRight,
     ];
   } else if (clickedItem == 3) {
     return [
-      botRight,
-      botCenter,
+      topLeft,
+      midLeft,
       botLeft,
-      largeTopLeft,
+      largeBotRight,
       topRight,
-      midRight,
+      topCenter,
     ];
   } else if (clickedItem == 4) {
     return [
-      botCenter,
-      botLeft,
       midLeft,
-      topLeft,
-      largeTopRight,
+      botLeft,
+      botCenter,
       botRight,
+      largeTopRight,
+      topLeft,
     ];
   } else {
     // for clickedItem == 5
     return [
-      botRight,
-      botCenter,
-      botLeft,
-      midLeft,
       topLeft,
+      midLeft,
+      botLeft,
+      botCenter,
+      botRight,
       largeTopRight,
     ];
   }
