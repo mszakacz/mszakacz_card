@@ -1,10 +1,7 @@
 name: mszakacz_card
-description: Business card. Contains such a informations like
-  - Designer name,
-  - His picture,
-  - His short description,
-  - His hobbies,
-  - Portfolio of his current projects.
+description: Business card. Contains such a informations like - Designer name, -
+  His picture, - His short description, - His hobbies, - Portfolio of his
+  current projects.
 
 version: 1.0.0+1
 publish_to: none
@@ -13,14 +10,20 @@ environment:
   sdk: ">=2.16.0 <3.0.0"
 
 dependencies:
+  animated_text_kit: ^4.2.1
   bloc: ^8.0.2
+  cloud_firestore: ^3.1.6
   equatable: ^2.0.3
+  firebase_auth: ^3.3.5
+  firebase_core: ^1.11.0
   flutter:
     sdk: flutter
   flutter_bloc: ^8.0.1
   flutter_localizations:
     sdk: flutter
   intl: ^0.17.0
+  provider: ^6.0.2
+  url_launcher: ^6.0.20
 
 dev_dependencies:
   bloc_test: ^9.0.2
@@ -34,3 +37,7 @@ flutter:
   generate: true
   assets:
     - assets/images/
+  fonts:
+    - family: Noto Sans
+      fonts:
+        - asset: assets/fonts/NotoSans-Regular.ttf
