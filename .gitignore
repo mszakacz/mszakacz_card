@@ -125,3 +125,6 @@ app.*.map.json
 !.idea/codeStyles/
 !.idea/dictionaries/
 !.idea/runConfigurations/
+
+#firebase
+lib/firebase_options.dart 
