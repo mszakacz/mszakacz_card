@@ -41,26 +41,30 @@ class CardView extends StatelessWidget {
             WindowWidget(
               window: state.windows[2],
               windowIndex: 2,
-              child: AnimatedGoalsWidget(selected: !state.windows[2].selected),
+              child: AnimatedGoalsWidget(
+                selected: !state.windows[2].selected,
+              ),
             ),
             WindowWidget(
               window: state.windows[3],
               windowIndex: 3,
-              child:
-                  AnimatedProjectsWidget(selected: !state.windows[3].selected),
+              child: AnimatedProjectsWidget(
+                selected: state.windows[3].selected,
+              ),
             ),
             WindowWidget(
               window: state.windows[4],
               windowIndex: 4,
-              child: AnimatedSwitcher(
-                duration: const Duration(milliseconds: 500),
-                child: AnimatedLinksWidget(selected: state.windows[4].selected),
+              child: AnimatedLinksWidget(
+                selected: state.windows[4].selected,
               ),
             ),
             WindowWidget(
               window: state.windows[5],
               windowIndex: 5,
-              child: AnimatedHobbiesWidget(selected: state.windows[5].selected),
+              child: AnimatedHobbiesWidget(
+                selected: state.windows[5].selected,
+              ),
             ),
           ],
         );
