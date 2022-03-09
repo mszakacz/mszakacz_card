@@ -27,7 +27,6 @@ class AnimatedNameWidget extends StatelessWidget {
         child: DefaultTextStyle(
           style: const TextStyle(
             fontSize: 25,
-            fontFamily: 'Agne',
             color: Colors.white,
           ),
           child: AnimatedTextKit(
