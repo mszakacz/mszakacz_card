@@ -1,7 +1,58 @@
 {
-    "@@locale": "en",
-    "counterAppBarTitle": "Counter",
-    "@counterAppBarTitle": {
-        "description": "Text shown in the AppBar of the Counter Page"
+    "nameWidgetText": "Maciej",
+    "@nameWidgetText": {
+        "description": "Text shown in the nameWidget"
+    },
+    "animatedNameWidgetText1": "Maciej Szakacz",
+    "@animatedNameWidgetText1": {
+        "description": "Text shown in the first TypewriterAnimatedText of the Animated Name Widget"
+    },
+    "animatedNameWidgetText2": "Flutter Developer",
+    "@animatedNameWidgetText2": {
+        "description": "Text shown in the second TypewriterAnimatedText of the Animated Name Widget"
+    },
+    "animatedProjectsWidgetName": "Projects",
+    "@animatedProjectsWidgetName": {
+        "description": "Text shown in the small widget Text of the Animated Projects Widget"
+    },
+    "animatedProjectsWidgetText1": "Better Organizer",
+    "@animatedProjectsWidgetText1": {
+        "description": "Text shown in the first FittedBox of the Animated Projects Widget"
+    },
+    "animatedProjectsWidgetText2": "User List",
+    "@animatedProjectsWidgetText2": {
+        "description": "Text shown in the second FittedBox of the Animated Projects Widget"
+    },
+    "animatedProjectsWidgetText3": "Number to Word Converter",
+    "@animatedProjectsWidgetText3": {
+        "description": "Text shown in the third FittedBox of the Animated Projects Widget"
+    },
+    "animatedProjectsWidgetText4": "Portfolio App",
+    "@animatedProjectsWidgetText4": {
+        "description": "Text shown in the 4th FittedBox of the Animated Projects Widget"
+    },
+    "animatedHobbiesWidgetText1": "Airspace engineer",
+    "@animatedHobbiesWidgetText1": {
+        "description": "Text shown in the first AnimatedText of the Animated Hobbies Widget"
+    },
+    "animatedHobbiesWidgetText2": "Basketball player",
+    "@animatedHobbiesWidgetText2": {
+        "description": "Text shown in the second AnimatedText of the Animated Hobbies Widget"
+    },
+    "animatedHobbiesWidgetText3": "Sport lover",
+    "@animatedHobbiesWidgetText3": {
+        "description": "Text shown in the third AnimatedText of the Animated Hobbies Widget"
+    },
+    "animatedHobbiesWidgetText4": "Math lover",
+    "@animatedHobbiesWidgetText4": {
+        "description": "Text shown in the 4th AnimatedText of the Animated Hobbies Widget"
+    },
+    "animatedHobbiesWidgetText5": "Ice swimmer",
+    "@animatedHobbiesWidgetText5": {
+        "description": "Text shown in the 5th AnimatedText of the Animated Hobbies Widget"
+    },
+    "animatedGoalsWidgetText": "    In the coming weeks, I would like to improve my skills and master Flutter. \n    Clear code and high quality are very important factors for me, so I want to learn more about good standards. \n    Also I would love to meet other developers, cooperate with them and have fun.",
+    "@animatedGoalsWidgetText": {
+        "description": "Text shown in the AnimatedText of the Animated Goals Widget"
     }
 }
