@@ -37,8 +37,7 @@ class AnimatedGoalsWidget extends StatelessWidget {
                   'Goals',
                   style: TextStyle(
                     fontSize: 22,
-                    fontFamily: 'Agne',
-                    color: Color.fromARGB(255, 8, 50, 53),
+                    color: Colors.white,
                   ),
                 ),
               )
@@ -46,8 +45,7 @@ class AnimatedGoalsWidget extends StatelessWidget {
                 child: DefaultTextStyle(
                   style: const TextStyle(
                     fontSize: 14,
-                    fontFamily: 'Bobbers',
-                    color: Color.fromARGB(255, 15, 8, 53),
+                    color: Colors.white,
                   ),
                   child: AnimatedTextKit(
                     isRepeatingAnimation: false,
