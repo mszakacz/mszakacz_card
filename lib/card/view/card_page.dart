@@ -27,43 +27,43 @@ class CardView extends StatelessWidget {
         return Stack(
           children: [
             WindowWidget(
-              window: state.windows[0],
+              windowPosition: state.windows[0],
               windowIndex: 0,
               child: const PictureWidget(),
             ),
             WindowWidget(
-              window: state.windows[1],
+              windowPosition: state.windows[1],
               windowIndex: 1,
-              child: state.windows[1].selected
+              child: state.selected == 1
                   ? const AnimatedNameWidget()
                   : const NameWidget(),
             ),
             WindowWidget(
-              window: state.windows[2],
+              windowPosition: state.windows[2],
               windowIndex: 2,
               child: AnimatedGoalsWidget(
-                selected: !state.windows[2].selected,
+                selected: state.selected != 2,
               ),
             ),
             WindowWidget(
-              window: state.windows[3],
+              windowPosition: state.windows[3],
               windowIndex: 3,
               child: AnimatedProjectsWidget(
-                selected: state.windows[3].selected,
+                selected: state.selected == 3,
               ),
             ),
             WindowWidget(
-              window: state.windows[4],
+              windowPosition: state.windows[4],
               windowIndex: 4,
               child: AnimatedLinksWidget(
-                selected: state.windows[4].selected,
+                selected: state.selected == 4,
               ),
             ),
             WindowWidget(
-              window: state.windows[5],
+              windowPosition: state.windows[5],
               windowIndex: 5,
               child: AnimatedHobbiesWidget(
-                selected: state.windows[5].selected,
+                selected: state.selected == 5,
               ),
             ),
           ],
