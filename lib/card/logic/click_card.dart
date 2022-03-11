@@ -1,61 +1,60 @@
 import 'package:mszakacz_card/constant/positions.dart';
-import 'package:mszakacz_card/models/window.dart';
 
-List<Window> clickCard(int clickedItem) {
+List<WindowPosition> clickCard(int clickedItem) {
   if (clickedItem == 0) {
     return [
-      largeTopLeft,
-      botLeft,
-      botCenter,
-      botRight,
-      midRight,
-      topRight,
+      WindowPosition.largeTopLeft,
+      WindowPosition.botLeft,
+      WindowPosition.botCenter,
+      WindowPosition.botRight,
+      WindowPosition.midRight,
+      WindowPosition.topRight,
     ];
   } else if (clickedItem == 1) {
     return [
-      topLeft,
-      largeBotLeft,
-      botRight,
-      midRight,
-      topRight,
-      topCenter,
+      WindowPosition.topLeft,
+      WindowPosition.largeBotLeft,
+      WindowPosition.botRight,
+      WindowPosition.midRight,
+      WindowPosition.topRight,
+      WindowPosition.topCenter,
     ];
   } else if (clickedItem == 2) {
     return [
-      topCenter,
-      topLeft,
-      largeBotLeft,
-      botRight,
-      midRight,
-      topRight,
+      WindowPosition.topCenter,
+      WindowPosition.topLeft,
+      WindowPosition.largeBotLeft,
+      WindowPosition.botRight,
+      WindowPosition.midRight,
+      WindowPosition.topRight,
     ];
   } else if (clickedItem == 3) {
     return [
-      topLeft,
-      midLeft,
-      botLeft,
-      largeBotRight,
-      topRight,
-      topCenter,
+      WindowPosition.topLeft,
+      WindowPosition.midLeft,
+      WindowPosition.botLeft,
+      WindowPosition.largeBotRight,
+      WindowPosition.topRight,
+      WindowPosition.topCenter,
     ];
   } else if (clickedItem == 4) {
     return [
-      midLeft,
-      botLeft,
-      botCenter,
-      botRight,
-      largeTopRight,
-      topLeft,
+      WindowPosition.midLeft,
+      WindowPosition.botLeft,
+      WindowPosition.botCenter,
+      WindowPosition.botRight,
+      WindowPosition.largeTopRight,
+      WindowPosition.topLeft,
     ];
   } else {
     // for clickedItem == 5
     return [
-      topLeft,
-      midLeft,
-      botLeft,
-      botCenter,
-      botRight,
-      largeTopRight,
+      WindowPosition.topLeft,
+      WindowPosition.midLeft,
+      WindowPosition.botLeft,
+      WindowPosition.botCenter,
+      WindowPosition.botRight,
+      WindowPosition.largeTopRight,
     ];
   }
 }
