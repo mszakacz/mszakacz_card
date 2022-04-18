@@ -31,7 +31,7 @@
     "@animatedProjectsWidgetText4": {
         "description": "Text shown in the 4th FittedBox of the Animated Projects Widget"
     },
-    "animatedHobbiesWidgetText1": "Airspace engineer",
+    "animatedHobbiesWidgetText1": "Aerospace Engineer",
     "@animatedHobbiesWidgetText1": {
         "description": "Text shown in the first AnimatedText of the Animated Hobbies Widget"
     },
